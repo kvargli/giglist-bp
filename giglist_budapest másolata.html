@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gigs List</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background: #000;
+      color: #fff;
+      display: flex;
+      min-height: 100vh;
+      position: relative;
+      overflow: auto;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('DSC01477.jpg') no-repeat center center fixed;
+      background-size: cover;
+      opacity: 0.55;
+      z-index: -1;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
+
+    .gig-entry {
+      margin-bottom: 10px;
+    }
+
+    .gig-date {
+      display: inline-block;
+      width: 120px;
+      color: #e8fff1;
+    }
+
+    .gig-location {
+      display: inline-block;
+      width: 300px;
+      color: #e8fff1;
+    }
+
+    .gig-entry a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .gig-entry a:hover {
+      text-decoration: underline;
+    }
+
+    .posters {
+      width: 250px;
+      padding: 20px;
+      background-color: transparent;
+    }
+
+    .poster-link {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    .poster-link img {
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      transition: transform 0.2s ease;
+    }
+
+    .poster-link img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bal oldal: koncertlista -->
+  <div class="main-content">
+    <h1>Upcoming Gigs</h1>
+    <h1>Budapest</h1>
+
+    <div class="gig-entry">
+      <span class="gig-date">2025-07-15</span>
+      <span class="gig-location">Dunyi</span>
+      <a href="https://www.facebook.com/events/1088601159821895/" target="_blank">Makrohang</a>
+    </div>
+
+    <div class="gig-entry">
+      <span class="gig-date">2025-07-15</span>
+      <span class="gig-location">AQB</span>
+      <a href="https://www.facebook.com/events/734373788968592/" target="_blank">Mark and Anna von Rosenstiel // Conversations With My Sister Vol 2</a>
+    </div>
+
+    <div class="gig-entry">
+      <span class="gig-date">2025-07-18</span>
+      <span class="gig-location">Gólya</span>
+      <a href="https://www.facebook.com/events/1856292021610491/" target="_blank">Greia x Din-Addict x Infectious Pit</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-14</span>
+      <span class="gig-location">Kripta</span>
+      <a href="https://scontent.fbud7-4.fna.fbcdn.net/v/t1.6435-9/76204364_109088537228286_6657446905074679808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jD0xQU1fzrQQ7kNvwHq50wi&_nc_oc=AdmI70FoXin393BFWsKqVp81dJ6QVPvij8uSFmWHyojgh3uFtRAjvh_h1kShWAb9JxRdD9Y5ZwdBWEL-RWUnaGhM&_nc_zt=23&_nc_ht=scontent.fbud7-4.fna&_nc_gid=Ip_pOV7Fxos9Y7PkVaKcMw&oh=00_AfSIYQWGOJHUsda33JpoTZ6TbpfRpRn8Ef3AmH_7EWycCw&oe=689DC6A6" target="_blank">COLLAPSED (CAN), HARAMIA</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-18</span>
+      <span class="gig-location">Kripta</span>
+      <a href="https://scontent.fbud7-4.fna.fbcdn.net/v/t1.6435-9/76204364_109088537228286_6657446905074679808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jD0xQU1fzrQQ7kNvwHq50wi&_nc_oc=AdmI70FoXin393BFWsKqVp81dJ6QVPvij8uSFmWHyojgh3uFtRAjvh_h1kShWAb9JxRdD9Y5ZwdBWEL-RWUnaGhM&_nc_zt=23&_nc_ht=scontent.fbud7-4.fna&_nc_gid=Ip_pOV7Fxos9Y7PkVaKcMw&oh=00_AfSIYQWGOJHUsda33JpoTZ6TbpfRpRn8Ef3AmH_7EWycCw&oe=689DC6A6" target="_blank">DERRUMBE(Berlin), M.P.S.S, Gepárd SS</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-19</span>
+      <span class="gig-location">Kripta</span>
+      <a href="https://scontent.fbud7-4.fna.fbcdn.net/v/t1.6435-9/76204364_109088537228286_6657446905074679808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jD0xQU1fzrQQ7kNvwHq50wi&_nc_oc=AdmI70FoXin393BFWsKqVp81dJ6QVPvij8uSFmWHyojgh3uFtRAjvh_h1kShWAb9JxRdD9Y5ZwdBWEL-RWUnaGhM&_nc_zt=23&_nc_ht=scontent.fbud7-4.fna&_nc_gid=Ip_pOV7Fxos9Y7PkVaKcMw&oh=00_AfSIYQWGOJHUsda33JpoTZ6TbpfRpRn8Ef3AmH_7EWycCw&oe=689DC6A6" target="_blank">GAZSI SUPPORT</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-20</span>
+      <span class="gig-location">Kripta</span>
+      <a href="https://scontent.fbud7-4.fna.fbcdn.net/v/t1.6435-9/76204364_109088537228286_6657446905074679808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jD0xQU1fzrQQ7kNvwHq50wi&_nc_oc=AdmI70FoXin393BFWsKqVp81dJ6QVPvij8uSFmWHyojgh3uFtRAjvh_h1kShWAb9JxRdD9Y5ZwdBWEL-RWUnaGhM&_nc_zt=23&_nc_ht=scontent.fbud7-4.fna&_nc_gid=Ip_pOV7Fxos9Y7PkVaKcMw&oh=00_AfSIYQWGOJHUsda33JpoTZ6TbpfRpRn8Ef3AmH_7EWycCw&oe=689DC6A6" target="_blank">GYAGYAGOZÁS - KERÁMIÁZÁS A KRIPTÁBAN</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-25</span>
+      <span class="gig-location">Kripta</span>
+      <a href="https://scontent.fbud7-4.fna.fbcdn.net/v/t1.6435-9/76204364_109088537228286_6657446905074679808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jD0xQU1fzrQQ7kNvwHq50wi&_nc_oc=AdmI70FoXin393BFWsKqVp81dJ6QVPvij8uSFmWHyojgh3uFtRAjvh_h1kShWAb9JxRdD9Y5ZwdBWEL-RWUnaGhM&_nc_zt=23&_nc_ht=scontent.fbud7-4.fna&_nc_gid=Ip_pOV7Fxos9Y7PkVaKcMw&oh=00_AfSIYQWGOJHUsda33JpoTZ6TbpfRpRn8Ef3AmH_7EWycCw&oe=689DC6A6" target="_blank">TECHNO @ Kripta</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-27</span>
+      <span class="gig-location">Kripta</span>
+      <a href="https://scontent.fbud7-4.fna.fbcdn.net/v/t1.6435-9/76204364_109088537228286_6657446905074679808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jD0xQU1fzrQQ7kNvwHq50wi&_nc_oc=AdmI70FoXin393BFWsKqVp81dJ6QVPvij8uSFmWHyojgh3uFtRAjvh_h1kShWAb9JxRdD9Y5ZwdBWEL-RWUnaGhM&_nc_zt=23&_nc_ht=scontent.fbud7-4.fna&_nc_gid=Ip_pOV7Fxos9Y7PkVaKcMw&oh=00_AfSIYQWGOJHUsda33JpoTZ6TbpfRpRn8Ef3AmH_7EWycCw&oe=689DC6A6" target="_blank">GLOBAL HORROR - WARHEAD 9 7 - LAST AFFRONT - PAKS 3 - GRINDER ADMIRAL - RYU MARE</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-28</span>
+      <span class="gig-location">Kripta</span>
+      <a href="https://scontent.fbud7-4.fna.fbcdn.net/v/t1.6435-9/76204364_109088537228286_6657446905074679808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jD0xQU1fzrQQ7kNvwHq50wi&_nc_oc=AdmI70FoXin393BFWsKqVp81dJ6QVPvij8uSFmWHyojgh3uFtRAjvh_h1kShWAb9JxRdD9Y5ZwdBWEL-RWUnaGhM&_nc_zt=23&_nc_ht=scontent.fbud7-4.fna&_nc_gid=Ip_pOV7Fxos9Y7PkVaKcMw&oh=00_AfSIYQWGOJHUsda33JpoTZ6TbpfRpRn8Ef3AmH_7EWycCw&oe=689DC6A6" target="_blank">SCORN (AT/DE/SWE)</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-08-01</span>
+      <span class="gig-location">Kripta</span>
+      <a href="https://scontent.fbud7-4.fna.fbcdn.net/v/t1.6435-9/76204364_109088537228286_6657446905074679808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jD0xQU1fzrQQ7kNvwHq50wi&_nc_oc=AdmI70FoXin393BFWsKqVp81dJ6QVPvij8uSFmWHyojgh3uFtRAjvh_h1kShWAb9JxRdD9Y5ZwdBWEL-RWUnaGhM&_nc_zt=23&_nc_ht=scontent.fbud7-4.fna&_nc_gid=Ip_pOV7Fxos9Y7PkVaKcMw&oh=00_AfSIYQWGOJHUsda33JpoTZ6TbpfRpRn8Ef3AmH_7EWycCw&oe=689DC6A6" target="_blank">KRIPTA HÁZFESZT HÉTVÉGE</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-08-02</span>
+      <span class="gig-location">Kripta</span>
+      <a href="https://scontent.fbud7-4.fna.fbcdn.net/v/t1.6435-9/76204364_109088537228286_6657446905074679808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jD0xQU1fzrQQ7kNvwHq50wi&_nc_oc=AdmI70FoXin393BFWsKqVp81dJ6QVPvij8uSFmWHyojgh3uFtRAjvh_h1kShWAb9JxRdD9Y5ZwdBWEL-RWUnaGhM&_nc_zt=23&_nc_ht=scontent.fbud7-4.fna&_nc_gid=Ip_pOV7Fxos9Y7PkVaKcMw&oh=00_AfSIYQWGOJHUsda33JpoTZ6TbpfRpRn8Ef3AmH_7EWycCw&oe=689DC6A6" target="_blank">KRIPTA HÁZFESZT HÉTVÉGE</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-08-10</span>
+      <span class="gig-location">Kripta</span>
+      <a href="https://scontent.fbud7-4.fna.fbcdn.net/v/t1.6435-9/76204364_109088537228286_6657446905074679808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jD0xQU1fzrQQ7kNvwHq50wi&_nc_oc=AdmI70FoXin393BFWsKqVp81dJ6QVPvij8uSFmWHyojgh3uFtRAjvh_h1kShWAb9JxRdD9Y5ZwdBWEL-RWUnaGhM&_nc_zt=23&_nc_ht=scontent.fbud7-4.fna&_nc_gid=Ip_pOV7Fxos9Y7PkVaKcMw&oh=00_AfSIYQWGOJHUsda33JpoTZ6TbpfRpRn8Ef3AmH_7EWycCw&oe=689DC6A6" target="_blank">DÉLUTÁNI MATINÉ</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-08-10</span>
+      <span class="gig-location">Kripta</span>
+      <a href="https://scontent.fbud7-4.fna.fbcdn.net/v/t1.6435-9/76204364_109088537228286_6657446905074679808_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=jD0xQU1fzrQQ7kNvwHq50wi&_nc_oc=AdmI70FoXin393BFWsKqVp81dJ6QVPvij8uSFmWHyojgh3uFtRAjvh_h1kShWAb9JxRdD9Y5ZwdBWEL-RWUnaGhM&_nc_zt=23&_nc_ht=scontent.fbud7-4.fna&_nc_gid=Ip_pOV7Fxos9Y7PkVaKcMw&oh=00_AfSIYQWGOJHUsda33JpoTZ6TbpfRpRn8Ef3AmH_7EWycCw&oe=689DC6A6" target="_blank">CSIGA 3. SZÜLETÉSNAP</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-19</span>
+      <span class="gig-location">Gólya</span>
+      <a href="https://www.facebook.com/events/980867523959516" target="_blank">Bratvolution Presents💖 Mean Girls: Shiva Edition</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-25</span>
+      <span class="gig-location">Gólya</span>
+      <a href="https://www.facebook.com/events/980867523959516" target="_blank">Gólya Házibuli vol.5 - Háni - Felhő utca - UNKIND GUTS - Vehemencia - DJ's</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-25</span>
+      <span class="gig-location">Gólya</span>
+      <a href="https://www.facebook.com/events/747930961262102/" target="_blank">Zsákbamacska - hidden lineup </a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-09-10</span>
+      <span class="gig-location">Gólya</span>
+      <a href="https://www.facebook.com/events/1492991705003505" target="_blank">Coltaine - Brandung Tour 2025</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-16</span>
+      <span class="gig-location">Dunyi</span>
+      <a href="https://www.facebook.com/events/759776036620446/" target="_blank">Pocket Pick</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-17</span>
+      <span class="gig-location">Dunyi</span>
+      <a href="https://www.facebook.com/events/687673394273721/" target="_blank">ZSÉ X SLAPSTICK?</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-07-30</span>
+      <span class="gig-location">Magyar Zene Háza</span>
+      <a href="https://www.facebook.com/events/992050983143451/" target="_blank">Ahmedou Lowla (Mauritánia)</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-08-10</span>
+      <span class="gig-location">Magyar Zene Háza</span>
+      <a href="https://www.facebook.com/events/1903044060514006/" target="_blank">Siketfajd</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-09-10</span>
+      <span class="gig-location">Magyar Zene Háza</span>
+      <a href="https://www.facebook.com/events/751909924161841/" target="_blank">Gulu Gulu - fingerfisher </a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-10-10</span>
+      <span class="gig-location">Magyar Zene Háza</span>
+      <a href="https://www.facebook.com/events/725874813170830/" target="_blank">Subcarpați (ROM)</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-08-05</span>
+      <span class="gig-location">Dürer Kert</span>
+      <a href="https://www.facebook.com/events/2511669039026408/" target="_blank">Gaerea - Mhorai</a>
+    </div>
+
+<div class="gig-entry">
+      <span class="gig-date">2025-08-05</span>
+      <span class="gig-location">Dürer Kert</span>
+      <a href="https://www.facebook.com/events/540247388669407/" target="_blank">thrown (SWE) - Crystal Lake (JP) - Heriot (UK) </a>
+    </div> 
+
+<div class="gig-entry">
+      <span class="gig-date">2025-11-16</span>
+      <span class="gig-location">Dürer Kert</span>
+      <a href="https://www.facebook.com/events/695573166784829?active_tab=about" target="_blank">Deafheaven - Portrayal of Guilt - Zeruel</a>
+    </div> 
+
+<div class="gig-entry">
+      <span class="gig-date">2025-10-11</span>
+      <span class="gig-location">Akvárium</span>
+      <a href="https://www.facebook.com/events/2744649792374013" target="_blank">Isolation Budapest</a>
+    </div> 
+
+<div class="gig-entry">
+      <span class="gig-date">2025-08-09</span>
+      <span class="gig-location">A38</span>
+      <a href="https://www.facebook.com/events/622781243801652/" target="_blank">Suuns (CA)</a>
+    </div> 
+
+<div class="gig-entry">
+      <span class="gig-date">2025-10-30</span>
+      <span class="gig-location">A38</span>
+      <a href="https://www.facebook.com/events/697414409592153/" target="_blank">shame - Massive Monster Europe Tour</a>
+    </div> 
+
+<div class="gig-entry">
+      <span class="gig-date">2025-08-16</span>
+      <span class="gig-location">ATNO Forge</span>
+      <a href="https://www.facebook.com/events/1060547719354834" target="_blank">varázs garázs #2 - Bufo Alvarius - Waiting Room - Kairos - Hocuspony</a>
+    </div> 
+  </div>
+
+  <!-- Jobb oldal: plakátok -->
+    <div class="posters">
+      <a href="https://www.facebook.com/events/734373788968592/" class="poster-link" target="_blank">
+        <img src="aqb_markanna.jpg" alt="aqb_markanna">
+      </a>
+      <a href="https://www.facebook.com/events/1088601159821895/" class="poster-link" target="_blank">
+        <img src="dunyi_makro.jpg" alt="dunyi_makro">
+      </a>
+      <a href="https://www.facebook.com/events/1856292021610491/" class="poster-link" target="_blank">
+        <img src="greia_golya.jpg" alt="golya_greia">
+      </a>
+      <a href="https://www.facebook.com/events/695573166784829" class="poster-link" target="_blank">
+        <img src="durer_deafheaven.jpg" alt="durer_deafheaven">
+      </a>
+    </div>
+  </div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const container = document.querySelector('.main-content');
+      const entries = Array.from(container.querySelectorAll('.gig-entry'));
+      const now = new Date();
+      now.setHours(0, 0, 0, 0); // csak dátum számít
+
+      const validEntries = entries.filter(entry => {
+        const dateStr = entry.querySelector('.gig-date').textContent.trim();
+        const date = new Date(dateStr);
+        date.setHours(0, 0, 0, 0);
+        return date.getTime() >= now.getTime();
+      });
+
+      validEntries.sort((a, b) => {
+        const dateA = new Date(a.querySelector('.gig-date').textContent.trim());
+        const dateB = new Date(b.querySelector('.gig-date').textContent.trim());
+        return dateA - dateB;
+      });
+
+      entries.forEach(e => e.remove());
+      validEntries.forEach(entry => {
+        container.appendChild(entry);
+      });
+    });
+  </script>
+
+</body>
+</html>
+
