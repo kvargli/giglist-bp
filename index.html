@@ -306,7 +306,7 @@
       const container = document.querySelector('.main-content');
       const entries = Array.from(container.querySelectorAll('.gig-entry'));
       const now = new Date();
-      now.setHours(0, 0, 0, 0); // csak dátum számít
+      now.setHours(8, 0, 0, 0); // csak dátum számít
 
       const validEntries = entries.filter(entry => {
         const dateStr = entry.querySelector('.gig-date').textContent.trim();
