@@ -302,30 +302,30 @@
   </div>
 
 <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      const container = document.querySelector('.main-content');
-      const entries = Array.from(container.querySelectorAll('.gig-entry'));
-      const now = new Date();
-      now.setHours(8, 0, 0, 0); // csak dátum számít
+window.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.main-content');
+  const entries = Array.from(container.querySelectorAll('.gig-entry'));
+  const now = new Date();
+  now.setHours(8, 0, 0, 0); // Reggel 8:00-tól számít elmúltnak
 
-      const validEntries = entries.filter(entry => {
-        const dateStr = entry.querySelector('.gig-date').textContent.trim();
-        const date = new Date(dateStr);
-        date.setHours(0, 0, 0, 0);
-        return date.getTime() >= now.getTime();
-      });
+  const validEntries = entries.filter(entry => {
+    const dateStr = entry.querySelector('.gig-date').textContent.trim();
+    const date = new Date(dateStr);
+    date.setHours(0, 0, 0, 0);
+    return date.getTime() >= now.getTime();
+  });
 
-      validEntries.sort((a, b) => {
-        const dateA = new Date(a.querySelector('.gig-date').textContent.trim());
-        const dateB = new Date(b.querySelector('.gig-date').textContent.trim());
-        return dateA - dateB;
-      });
+  validEntries.sort((a, b) => {
+    const dateA = new Date(a.querySelector('.gig-date').textContent.trim());
+    const dateB = new Date(b.querySelector('.gig-date').textContent.trim());
+    return dateA - dateB;
+  });
 
-      entries.forEach(e => e.remove());
-      validEntries.forEach(entry => {
-        container.appendChild(entry);
-      });
-    });
+  entries.forEach(e => e.remove());
+  validEntries.forEach(entry => {
+    container.appendChild(entry);
+  });
+});
   </script>
 
 </body>
